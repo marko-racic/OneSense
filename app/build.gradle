@@ -1,0 +1,63 @@
+plugins {
+    id 'com.android.application'
+}
+
+def oauthClientId = project.findProperty('adsenseClientId') ?: project.findProperty('gaClientId') ?: 'REPLACE_ME.apps.googleusercontent.com'
+// Redirect: com.googleusercontent.apps.<puni prefiks klijenta>:/oauth2redirect
+// (iOS klijent — Android klijenti nemaju custom URI scheme u novom Auth Platformu)
+def redirectScheme = oauthClientId ==~ /[\w-]+\.apps\.googleusercontent\.com/
+        ? 'com.googleusercontent.apps.' + oauthClientId.split('\\.')[0]
+        : 'com.googleusercontent.apps.placeholder'
+def redirectUri = redirectScheme + ':/oauth2redirect'
+
+android {
+    namespace 'rs.racic.onesense'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "rs.racic.onesense"
+        minSdk 26
+        // Play od 31.08.2026. zahteva target SDK 36. compileSdk ostaje 35 jer AGP 8.7.3
+        // ne zna za 36; nove API-je ne koristimo, bitna je samo deklaracija u manifestu.
+        targetSdk 36
+        versionCode 7
+        versionName "0.7"
+        manifestPlaceholders = [redirectScheme: redirectScheme]
+        buildConfigField "String", "OAUTH_CLIENT_ID", "\"${oauthClientId}\""
+        buildConfigField "String", "REDIRECT_URI", "\"${redirectUri}\""
+    }
+
+    signingConfigs {
+        release {
+            // Potpis je van repo-a: putanja i lozinke iz ~/.gradle/gradle.properties.
+            // Bez tih vrednosti build radi, samo nepotpisan (za klonove sa GitHuba).
+            def ks = project.findProperty('KEYSTORE_FILE')
+            if (ks) {
+                storeFile new File(ks)
+                storePassword project.findProperty('KEYSTORE_PASSWORD')
+                keyAlias 'onelytics'
+                keyPassword project.findProperty('KEY_PASSWORD')
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            if (project.findProperty('KEYSTORE_FILE')) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}

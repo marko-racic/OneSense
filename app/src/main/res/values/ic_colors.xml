@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Boje ikonice su fiksne: ikonica NE prati light/dark temu sistema. -->
+    <color name="ic_bg">#1A2029</color>
+    <color name="ic_bar">#FF7A5C</color>
+    <color name="ic_num">#F2F6F9</color>
+</resources>

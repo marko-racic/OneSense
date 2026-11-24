@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OneSense</string>
+
+    <string name="status_earnings_range">procenjena zarada — %1$s\n(AdSense)</string>
+    <string name="status_prev_failed">prethodni pokušaj neuspešan</string>
+    <string name="status_no_data">Još nema podataka — prijavi se i izaberi nalog.</string>
+    <string-array name="range_names">
+        <item>Danas</item>
+        <item>Juče</item>
+        <item>7 dana</item>
+        <item>Mesec</item>
+    </string-array>
+    <string name="app_name_all">OneSense — svi periodi</string>
+    <string name="label_config_range">PRIKAZANA VREDNOST</string>
+    <string name="widget_range_0">Danas</string>
+    <string name="widget_range_1">Juče</string>
+    <string name="widget_range_2">7 dana</string>
+    <string name="widget_range_3">Mesec</string>
+
+    <string name="login">Prijavi se Google nalogom</string>
+    <string name="login_again">Prijavi se ponovo</string>
+    <string name="logout">Odjavi se</string>
+    <string name="refresh">Osveži</string>
+    <string name="widget_sub_default">danas</string>
+    <string name="refreshing">Osvežavam…</string>
+    <string name="settings_refresh">OSVEŽAVANJE</string>
+    <string name="refresh_every">Auto-osvežavanje: %1$s</string>
+    <string name="interval_title">Učestalost osvežavanja</string>
+    <string name="sync_adsense">Sinhronizuj AdSense</string>
+    <string-array name="interval_labels">
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>1 sat</item>
+        <item>3 sata</item>
+        <item>6 sati</item>
+        <item>1 dan</item>
+    </string-array>
+    <string-array name="palette_names">
+        <item>Tamna</item>
+        <item>Zelena</item>
+        <item>Plava</item>
+        <item>Ljubičasta</item>
+        <item>Narandžasta</item>
+        <item>Crvena</item>
+        <item>Svetla</item>
+    </string-array>
+    <string name="ok_logged_in">Prijava uspešna.</string>
+    <string name="ok_updated">Iznos osvežen.</string>
+    <string name="err_not_configured">Prvo se prijavi i izaberi nalog.</string>
+    <string name="err_login_failed">Prijava nije uspela</string>
+    <string name="err_state_mismatch">OAuth state se ne poklapa — pokušaj ponovo.</string>
+    <string name="err_no_code">OAuth redirect ne sadrži kod.</string>
+
+    <string name="pick_account">Izaberi nalog sa liste…</string>
+    <string name="pick_account_title">Izaberi AdSense nalog</string>
+    <string name="loading_accounts">Učitavam listu naloga…</string>
+    <string name="err_accounts">Greška pri listi naloga: %1$s\n(Proveri da je uključen AdSense Management API.)</string>
+    <string name="err_accounts_title">Greška pri listi naloga</string>
+    <string name="err_accounts_empty">Nema AdSense naloga dostupnih ovom Google nalogu.</string>
+    <string name="cancel">Odustani</string>
+
+    <string name="hint_tap_to_pick">dodirni pa izaberi nalog</string>
+    <string name="hint_login_needed">potrebna prijava</string>
+    <string name="id_prefix">ID %1$s</string>
+    <string name="config_login_needed">Prijavi se u OneSense aplikaciji pa se vrati ovde.</string>
+
+    <string name="config_title">Novi widžet</string>
+    <string name="label_ga_property">ADSENSE NALOG</string>
+    <string name="label_google_account">GOOGLE NALOG</string>
+    <string name="label_widget_color">BOJA WIDŽETA</string>
+    <string name="config_save">Sačuvaj widžet</string>
+
+    <string name="crash_title">Aplikacija je prošli put neočekivano stala</string>
+    <string name="crash_message">Ništa nije izgubljeno — prijava i izabrani nalog su sačuvani. Ako se ponovi, kopiraj tehnički detalj i pošalji ga developeru.</string>
+    <string name="crash_copy">Kopiraj tehnički detalj</string>
+    <string name="crash_copied">Tehnički detalj je kopiran</string>
+</resources>

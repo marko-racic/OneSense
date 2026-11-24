@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OneSense</string>
+
+    <string name="status_earnings_range">estimated earnings — %1$s\n(AdSense)</string>
+    <string name="status_prev_failed">previous attempt failed</string>
+    <string name="status_no_data">No data yet — sign in and pick an account.</string>
+    <string-array name="range_names">
+        <item>Today</item>
+        <item>Yesterday</item>
+        <item>Last 7 days</item>
+        <item>This month</item>
+    </string-array>
+    <string name="app_name_all">OneSense — all periods</string>
+    <string name="label_config_range">SHOWN VALUE</string>
+    <string name="widget_range_0">Today</string>
+    <string name="widget_range_1">Yesterday</string>
+    <string name="widget_range_2">7 days</string>
+    <string name="widget_range_3">Month</string>
+
+    <string name="login">Sign in with Google</string>
+    <string name="login_again">Sign in again</string>
+    <string name="logout">Sign out</string>
+    <string name="refresh">Refresh</string>
+    <string name="widget_sub_default">today</string>
+    <string name="refreshing">Refreshing…</string>
+    <string name="settings_refresh">REFRESH</string>
+    <string name="refresh_every">Auto-refresh: %1$s</string>
+    <string name="interval_title">Refresh frequency</string>
+    <string name="sync_adsense">Sync AdSense</string>
+    <string-array name="interval_labels">
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>1 day</item>
+    </string-array>
+    <integer-array name="interval_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>1440</item>
+    </integer-array>
+    <string-array name="palette_names">
+        <item>Dark</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Purple</item>
+        <item>Amber</item>
+        <item>Red</item>
+        <item>Light</item>
+    </string-array>
+    <string name="ok_logged_in">Signed in.</string>
+    <string name="ok_updated">Amount refreshed.</string>
+    <string name="err_not_configured">Sign in and pick an account first.</string>
+    <string name="err_login_failed">Sign-in failed</string>
+    <string name="err_state_mismatch">OAuth state mismatch — please try again.</string>
+    <string name="err_no_code">The OAuth redirect did not contain a code.</string>
+
+    <string name="pick_account">Pick an account from the list…</string>
+    <string name="pick_account_title">Pick an AdSense account</string>
+    <string name="loading_accounts">Loading accounts…</string>
+    <string name="err_accounts">Could not list accounts: %1$s\n(Make sure the AdSense Management API is enabled.)</string>
+    <string name="err_accounts_title">Could not list accounts</string>
+    <string name="err_accounts_empty">No AdSense accounts are available to this Google account.</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="hint_tap_to_pick">tap to pick an account</string>
+    <string name="hint_login_needed">sign-in required</string>
+    <string name="id_prefix">ID %1$s</string>
+    <string name="config_login_needed">Sign in inside the OneSense app, then come back here.</string>
+
+    <string name="config_title">New widget</string>
+    <string name="label_ga_property">ADSENSE ACCOUNT</string>
+    <string name="label_google_account">GOOGLE ACCOUNT</string>
+    <string name="label_widget_color">WIDGET COLOUR</string>
+    <string name="config_save">Save widget</string>
+
+    <string name="crash_title">OneSense stopped unexpectedly</string>
+    <string name="crash_message">Nothing was lost — your sign-in and the selected account are saved. If it happens again, copy the technical detail and send it to the developer.</string>
+    <string name="crash_copy">Copy technical detail</string>
+    <string name="crash_copied">Technical detail copied</string>
+</resources>

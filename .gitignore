@@ -1,0 +1,10 @@
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+
+# Potpis nikad u repo-u — keystore i lozinke zive izvan projekta
+*.keystore
+*.jks
+app/keystore/

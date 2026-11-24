@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- Štucna novčića (koral) + bela jedinica — L2, sitniji novčići, oštre prečke -->
+
+    <!-- novčić dole -->
+    <path android:fillColor="#FF7A5C"
+        android:pathData="M30,58 v4.5 a11,4 0 0,0 22,0 v-4.5 z"/>
+    <path android:fillColor="#FF9B82"
+        android:pathData="M30,58 a11,4 0 1,0 22,0 a11,4 0 1,0 -22,0"/>
+    <!-- novčić srednji -->
+    <path android:fillColor="#FF7A5C"
+        android:pathData="M30,51.5 v4.5 a11,4 0 0,0 22,0 v-4.5 z"/>
+    <path android:fillColor="#FF9B82"
+        android:pathData="M30,51.5 a11,4 0 1,0 22,0 a11,4 0 1,0 -22,0"/>
+    <!-- tamna prečka: donja ivica srednjeg preko face donjeg -->
+    <path android:strokeColor="#1A2029" android:strokeWidth="1.4"
+        android:pathData="M30,56 a11,4 0 0,0 22,0"/>
+    <!-- novčić gore -->
+    <path android:fillColor="#FF7A5C"
+        android:pathData="M30,45 v4.5 a11,4 0 0,0 22,0 v-4.5 z"/>
+    <path android:fillColor="#FF9B82"
+        android:pathData="M30,45 a11,4 0 1,0 22,0 a11,4 0 1,0 -22,0"/>
+    <!-- tamna prečka: donja ivica gornjeg preko face srednjeg -->
+    <path android:strokeColor="#1A2029" android:strokeWidth="1.4"
+        android:pathData="M30,49.5 a11,4 0 0,0 22,0"/>
+
+    <!-- bela "1" — silueta kao OneLytics -->
+    <path android:fillColor="#F2F6F9"
+        android:pathData="M58.00,43.40 L67.60,34.28 H78.00 V70.00 H68.12 V47.96 L60.00,48.72 Z"/>
+</vector>

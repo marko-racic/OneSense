@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- Monochrome: ista geometrija; pozadinske prečke se brisu jer sistem boji sve u jednu boju -->
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M30,58 v4.5 a11,4 0 0,0 22,0 v-4.5 z"/>
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M30,58 a11,4 0 1,0 22,0 a11,4 0 1,0 -22,0"/>
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M30,51.5 v4.5 a11,4 0 0,0 22,0 v-4.5 z"/>
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M30,51.5 a11,4 0 1,0 22,0 a11,4 0 1,0 -22,0"/>
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M30,45 v4.5 a11,4 0 0,0 22,0 v-4.5 z"/>
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M30,45 a11,4 0 1,0 22,0 a11,4 0 1,0 -22,0"/>
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M58.00,43.40 L67.60,34.28 H78.00 V70.00 H68.12 V47.96 L60.00,48.72 Z"/>
+</vector>
